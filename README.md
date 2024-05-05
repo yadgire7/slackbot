@@ -24,16 +24,16 @@ pip install -r requirements.txt
 
 4. Create a .env file in the directory or create environment variables on your system.
 
-*For .env file:
+*For .env file:*
 ```
 <environment_variable_name>="<your_key>"
 ```
 
-*For Linux/ Mac OS: 
+*For Linux/ Mac OS:*
 ```
 export <environment_variable_name>=<your_key>
 ```
-*For Windows OS:
+*For Windows OS:*
 - Seach 'env' in the search panel
 - Click 'Edit the system environment variables'
 - Click 'Environment variables'
