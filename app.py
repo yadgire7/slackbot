@@ -7,7 +7,7 @@ from slack_bolt.adapter.flask import SlackRequestHandler
 from slack_bolt import App
 from dotenv import find_dotenv, load_dotenv
 from flask import Flask, request
-from functions import write_email, router, code_generator
+from functions import code_generator
 
 # load dotenv
 load_dotenv(find_dotenv())
@@ -82,7 +82,5 @@ def slack_events():
     return handler.handle(request)
 
 if __name__ == "__main__":
-    # print(f"user_id: {get_bot_user_id()}")
+    print(f"user_id: {get_bot_user_id()}")
     flask_app.run(debug=True, port=5001)
-
-
